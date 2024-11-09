@@ -1,0 +1,158 @@
+body{
+    background: #4d405e;
+    background:url(/WhatsApp\ Image\ 2024-11-09\ at\ 11.35.56_edbe194a.jpg) #4d405e;
+    
+}
+#containerlogin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;   
+    height: 500px;
+    margin: auto;
+    margin-top: 60px;
+    box-shadow: inset  -5px -5px rgb(0, 0, 0);
+    border-radius: 10px;
+    background: color #4d405e;
+    backdrop-filter:blur(5px);
+    padding-top: 70px;      
+    border-top: 3px solid rgb(0, 0, 0);
+    border-left: 3px solid rgba(0, 0, 0, 0.986);
+    font-family: Andale Mono,AndaleMono,monospace; 
+    letter-spacing: 1px;
+    background-color: #4d405e89;
+}
+#containersignup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;   
+    height: 540px;
+    margin: auto;
+    margin-top: 60px;
+    border: 3px solid black;
+    box-shadow: inset  -5px -5px rgb(0, 0, 0);
+    border-radius: 10px;
+    backdrop-filter: blur(8PX);
+    padding-top: 45px;
+    background-color: #4d405e89;
+    
+
+}
+.username{
+    padding: 12px;
+    border-radius: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+    border: 1px solid black;
+    box-shadow: inset  -5px -5px rgb(0, 0, 0);
+    border-radius: 10px;
+    margin-left: 10px;
+    width: 50%;
+}
+.password{
+    padding: 12px;
+    border-radius: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+    border: 1px solid black;
+    box-shadow: inset  -5px -5px rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 50%;
+}
+.login{
+    text-decoration: none;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+    color: black ;
+    font-style: i;
+    border: 1px solid black;
+    box-shadow: inset  -5px -5px rgb(0, 0, 0);
+    border-radius: 10px;
+    font-size:medium;
+    width: 25%;
+    font-family: Andale Mono,AndaleMono,monospace; 
+    letter-spacing: 1px;
+}
+.signup{
+    text-decoration: none;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+    color: black ;
+    font-style: i;
+    border: 1px solid black;
+    box-shadow: inset  -5px -5px rgb(0, 0, 0);
+    border-radius: 10px;
+    font-size:medium;
+    font-family: Andale Mono,AndaleMono,monospace; 
+    letter-spacing: 1px;
+        width: 25%;
+}
+.username:hover{
+    width: 60%;
+    height: 5%;
+
+}
+.password:hover{
+
+    width: 60%;
+    height: 5%;
+}
+.login:hover {
+    cursor:pointer;
+    width: 30%;
+    height:60px;
+    font-size: x-large;
+}
+.signup:hover{
+    cursor:pointer;
+    width: 30%;
+    height:60px;
+    font-size: x-large;
+
+}
+.signupbutton{
+    text-decoration: none;
+    color: black;
+    font-style:bold;
+    font-family: Andale Mono,AndaleMono,monospace; 
+    letter-spacing: 1px;}
+h5{
+    padding: 0%;
+    margin: 0%;
+}
+h1{
+    font-family: Andale Mono,AndaleMono,monospace; 
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+}
+.video{
+    position:absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+@media(min-aspect-ratio:16/9){
+    .video{
+        width: 100%;
+        height: auto;
+    }
+}
+h4{
+    color: white;
+}
+#btn:hover{
+    background-color:cyan;
+    color: black;
+}
+

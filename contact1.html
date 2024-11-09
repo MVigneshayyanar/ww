@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>NANOCONTACT</title>
+    <link rel="stylesheet" href="contact1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="lcon">
+
+        <video autoplay loop muted plays-inline class="video" style="margin-top: 50px;">
+            <source src="/img/circuitnano.mp4" type="video/mp4">
+        </video>
+        <div id="navdiv">
+            <div id="nav">
+            <ul id="nav-element" class="navbox">
+                <li  ><button id="btn" ><a href="/index.html" style="color: rgb(0, 0, 0);text-decoration: none;">HOME</a></button></li>
+                <li ><button id="btn"><a href="/about.html" style="color: rgb(0, 0, 0);text-decoration: none;">ABOUT NANO</a></button></li>
+                <li ><button id="btn" ><a href="/recent.html"  style="color: rgb(0, 0, 0);text-decoration: none;">RECENT TRENDS</a></button></li>
+                <li ><button id="btn" ><a href="/news.html"  style="color: rgb(0, 0, 0);text-decoration: none;">NEWS</a></button></li>
+                <li ><button id="btn"  style="background-color: #05D9FF;"><a href="/contact.html"  style="color: rgb(0, 0, 0);text-decoration: none;">CONTACT US</a></button></li>
+                <li ><a href="/signin.html"><img src="/img/profile.png" class="accountlogo"  style="color:black  ; background-color:white; border-radius: 50%; "></a></li>
+            </ul>
+            </div>
+        </div>
+    <div class="feed">
+        <h2>WRITE A REVIEW</h2>
+        <div class="feed_form" method="post">
+        <form name="submit-googlesheet">
+            <input type="text" name="Name" placeholder="Name"><br>
+            <input type="email" name="Email" placeholder="Email ID"><br>
+            <input type="text" name="Number" placeholder="Contact Number"><br>
+            <textarea rows="5" cols="7" name="Review" placeholder="Write your review"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+        </div>
+    </div>
+    </div>
+
+<script type="text/javascript">
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzmY7HJmUEupsd8UBLj-aTxEsPcKQEWFYaxFA44IcIYrYCjanY1WcTF4zyKYXFQubtbTA/exec'
+            const form = document.forms['submit-googlesheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks you for your valuable feedback!"))
+                .catch(error => console.error('Error!', error.message))
+            })
+          
+</script>
+</body>
+</html>
